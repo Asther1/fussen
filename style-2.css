@@ -98,6 +98,10 @@ footer{
     background-color: #795548
 
  }
+
+ img{
+    width: 250px;
+}
  
  #picture-1,#picture-2{
     width:1000px;
