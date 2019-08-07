@@ -6,6 +6,9 @@
     font-family: 微軟黑正體;
     /* 字體顏色 */
     color: #ffa000;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
 }
 
 body,html{
@@ -32,103 +35,127 @@ body,html{
 }
 #box-1{
     background-color:#795548;
-    height:250px;
+    height:50px;
     widows: 100%;
     box-sizing: border-box;
 
 }
 
 
+
 /* 導覽列區塊*/
 #LOGO{
-        font-size: 100px;
-        margin-left: 150px;
-        
+      
+        margin-left: 50px;     
 }
-NAV A{
-        /*內距  */
-        padding: 10px 0;
-        font-size: 60px;
-        margin-right: 100px;
-        line-height: 250px;
-
+nav a {
+    /* 內距 p */
+    padding: 7px 10px;
+    line-height: 50px;
+    margin-right: 25px;
+   
 }
 
-nav a:hover{
-            background-color:  rgba(47,81,112,0.4);
+/* hover 滑入 */
+nav a:hover {
+    background-color: rgba(47, 81, 112, 0.4);
 }
 
-a{
-    /* 文字裝飾 */
+a {
+    /* 文字裝飾 td */
     text-decoration: none;
 }
-
-/* nav裡面的div */
-nav div{
-         float: right;
+/* 指 nav 裡面的 div */
+nav div {
+    /* 浮動：靠右 flr */
+    float: right;
 }
 
-h1{
-    font-size: 100px;
-    
+nav div a {
+    margin-left: 40px;
 }
 
-p{
-    font-size: 60px;
+/* 內容區塊 */
+#content {
+    width: 50%;
+    margin-top: 100px;
 }
 
-#content{
-            width:60%;
-            margin-left: 150px;
-            background-color: rgba(119, 84, 72, 0.5);
-            margin-top: 200px;
-            background-repeat:no-repeat;
-            background-size: 50%;
-            height: 50%;
-            
+#content a {
+    border: 0.5px solid #fff;
+    padding: 20px 50px;
+    background-color: rgba(47, 81, 112, 0.4);
+}
+
+#content p {
+    margin: 50px 0;
+}
+
+#content a:hover {
+    background-color: rgba(47, 81, 112, 0);
+}
+
+/* 按扭區塊 */
+#button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#button a {
+   
+    padding: 15px;
+    background-color: #795548;
+    border-radius: 50%;
+    /* 行內區塊 dib */
+    display: inline-block;
 }
 
 
-/*按鈕區塊  */
-#button{
-    text-align:center;
-    margin-top: 150px;
+
+#button a.button-mr {
+    margin-right: 100px;
 }
 
-#button a{
-             padding: 20px;
-             border: 0.5px solid #black;
-             background-color: #795548;
-             border-radius: 50%;
-             display:inline-block;
-             margin-top: 20px;
-
+#button a:hover {
+    background-color: rgba(47, 81, 112, 0);
 }
 
-#button a.button-2{
-                    margin-right:100px; 
+/* 頁尾 */
+footer {
+    background-color: #795548;
+    /* 定位：固定 psf */
+    position: fixed;
+    /* 底部距離 0 b0 */
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    /* 行高與高度相同：垂直至中，僅限一行內容 */
+    line-height: 50px;
+    color:white;
 }
 
-#button a:hover{
-
-                background-color: rgba(47,81,112,0);
-    }
-
-footer{
-        text-align:center;
-        background-color: #795548;
-        /* 定位:固定 psf */
-        position: fixed;
-        /* 底部距離 */
-        bottom: 0;
-        width: 100%;
-        height: 100px;
-        line-height: 100px;
-        font-size: 60px;
-        color:white; 
-        
-
+/* 關於我頁面 */
+#about {
+    width: 800px;
+    height: 500px;
+    background-image: url("https://images.unsplash.com/photo-1501784050997-975d9fdb56d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    /* 邊框 bd */
+    border: 30px solid #fff;
+    /* 區塊陰影：左右位移 上下位移 模糊量 顏色 */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    /* 外距：上 右 下 左 */
+    margin: 100px auto 0 auto;
+    /* 水平置中 tac */
+    text-align: center;
+    /* 垂直置中 一行文字 */
+    line-height: 500px;
+    /* 文字大小 fz20 */
+    font-size: 20px;
+    /* 文字陰影 ts - 與區塊陰影相同 */
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 img{
-    width: 250px;
+    width: 3em;
 }

@@ -1,7 +1,7 @@
 /* 所有元素 */
 *{
     /* 邊框 */
-    border: 0.5px solid rgba(225,0,0,0.5);
+    border: 0.5px solid rgba(225,0,0,0);
     /* 字形 */
     font-family: 微軟黑正體;
     /* 字體顏色 */
@@ -32,15 +32,15 @@ body,html{
 }
 #box-1{
     background-color:#795548;
-    height:250px;
+    height:50px;
     width: 100%;
     box-sizing: border-box;
    
 }
 /* 導覽列區塊*/
 #LOGO{
-    font-size: 100px;
-    margin-left: 150px;
+    
+    margin-left: 50px;
     
 }
 NAV A{
